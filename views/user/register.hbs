@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h5>Registro de Usuários</h5>
+    </div>
+    <div class="card-body">
+      <form method="post" action="/register">
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <div class="mb-3">
+          <label for="id-input-nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="id-input-nome" placeholder="Digite seu nome" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="id-input-email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="id-input-email" placeholder="Digite seu email" name="email"
+            required>
+        </div>
+        <div class="mb-3">
+          <label for="id-input-senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="id-input-senha" placeholder="Digite sua senha" name="password"
+            required>
+        </div>
+        <div class="mb-3">
+          <label for="id-input-confirmar-senha" class="form-label">Confirmar Senha</label>
+          <input type="password" class="form-control" id="id-input-confirmar-senha" placeholder="Confirme sua senha"
+            name="confirmarPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a href="/" class="btn btn-secondary">Voltar</a>
+      </form>
+    </div>
+  </div>
+</div>

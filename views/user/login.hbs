@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h5>Login</h5>
+    </div>
+    <div class="card-body">
+      <form method="post" action="/login">
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <div class="mb-3">
+          <label for="id-input-email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="id-input-email" placeholder="Digite seu email" name="email"
+            required>
+        </div>
+        <div class="mb-3">
+          <label for="id-input-senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="id-input-senha" placeholder="Digite sua senha" name="senha"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <a href="/" class="btn btn-secondary">Voltar</a>
+      </form>
+    </div>
+  </div>
+</div>
